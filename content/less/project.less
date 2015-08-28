@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 20, 2015, 6:51:15 PM
+    Author     : Jóhann Sigurðsson
+*/
+
+/* warp speed ahead */
+.animClass {
+    -webkit-transform: translate3d(0, 0, 0);
+    /* more specific animation properties here */
+}
+
+body {
+    background-color: lightgray; margin-top: 20px;
+}
+
+div.container {
+    div.row {
+
+        border-style: solid;
+        border-color: black;        
+        border-width: 0px;
+
+        &:not(:first-of-type) {
+            border-top-width: 1px;
+        }        
+        &:not(:last-of-type) {
+            border-bottom-width: 1px;
+        }
+
+        &>div {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+
+            border-style: solid;
+            border-color: black;     
+            border-width: 0px;
+
+            &:not(:first-of-type) {
+                border-left-width: 1px;
+            }        
+            &:not(:last-of-type) {
+                border-right-width: 1px;
+            }
+        }
+    }
+}
+
+
+#header-row > div { min-height: 150px; }
+
+@import "project-xs.less";
