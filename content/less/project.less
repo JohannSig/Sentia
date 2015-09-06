@@ -15,42 +15,112 @@ and open the template in the editor.
 }
 
 body {
-    background-color: lightgray; margin-top: 20px;
+    background-color: lightgray; 
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+background: rgb(181,189,200); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 */
+
+    
+    
+    margin-top: 20px;
+    overflow-y: scroll;
 }
 
-div.container {
-    div.row {
+#main-container {
 
-        border-style: solid;
-        border-color: black;        
-        border-width: 0px;
+    box-shadow: 0px 0px 16px black;
+    
+    background-color: white;    
+    div.row.bordered {
+        border: 0px solid #333;
 
         &:not(:first-of-type) {
-            border-top-width: 1px;
+            border-top-width: 6px;
         }        
-        &:not(:last-of-type) {
-            border-bottom-width: 1px;
-        }
 
         &>div {
             box-sizing: border-box;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
 
-            border-style: solid;
-            border-color: black;     
-            border-width: 0px;
+            border: 0px solid #333;
 
             &:not(:first-of-type) {
-                border-left-width: 1px;
-            }        
-            &:not(:last-of-type) {
-                border-right-width: 1px;
+                border-left-width: 6px;
+            }
+
+            &.full {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px; 
+                right: 0px;
+            }
+
+            &.blue {
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/dodgerblue+0,60abf8+44,4096ee+100;Blue+3D+%2314 */
+                background: dodgerblue; /* Old browsers */
+                background: -moz-linear-gradient(top,  dodgerblue 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,dodgerblue), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  dodgerblue 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  dodgerblue 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  dodgerblue 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  dodgerblue 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='dodgerblue', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+            }
+
+            &.red {
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/brown+0,8f0222+44,6d0019+100;Brown+Red+3D */
+                background: brown; /* Old browsers */
+                background: -moz-linear-gradient(top,  brown 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,brown), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  brown 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  brown 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  brown 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  brown 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='brown', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+            }
+
+            &.yellow {
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f1b9+0,efcf00+100 */
+                background: #f7f1b9; /* Old browsers */
+                background: -moz-linear-gradient(top,  #f7f1b9 0%, khaki 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f1b9), color-stop(100%,khaki)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  #f7f1b9 0%,khaki 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  #f7f1b9 0%,khaki 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  #f7f1b9 0%,khaki 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  #f7f1b9 0%,khaki 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f1b9', endColorstr='khaki',GradientType=0 ); /* IE6-9 */
             }
         }
     }
 }
 
+.staff {
+    padding-top: 20px;
+    
+    h3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    div > h4 {
+        &:not(:first-child) { margin-top: 30px; }
+        margin-bottom: 0px;
+    }
+    
+    img {
+        width: 100%;
+        border: 6px solid #333;
+    }
+}
 
 #header-row > div { min-height: 150px; }
 
