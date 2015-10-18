@@ -7,14 +7,18 @@
 $(document).ready( function() {
     $('[data-toggle="popover"]').popover({
         content : "<li><a class='staff-tab btn btn-link' role='tab' data-toggle='tab' href='#staff-1'>Soffía Elín Sigurðardóttir</a></li>\n\
-<li><a class='staff-tab btn btn-link' role='tab' data-toggle='tab' href='#staff-2'>Starfsmaður á plani</a></li>\n\
-<li><a class='staff-tab btn btn-link' role='tab' data-toggle='tab' href='#staff-3'>Starfsmaður í þjálfun</a></li>"
+<li><a class='staff-tab btn btn-link' role='tab' data-toggle='tab' href='#staff-2'>Elín Anna Baldursdóttir</a></li>\n\
+<li><a class='staff-tab btn btn-link' role='tab' data-toggle='tab' href='#staff-3'>Hanna Dorothéa Bizouerne</a></li>"
     });    
     console.log('Done.');
 });
 
 
-$(document).on('shown.bs.tab', '.staff-tab', function() {     
-    $('a[role="tab"][data-toggle="popover"]').parent().addClass('active');
+$(document).on('shown.bs.tab', '[data-toggle="tab"]', function() {     
+    console.log(this);
+    //$('a[role="tab"][data-toggle="popover"]').parent().addClass('active');
     $('[data-toggle="popover"]').popover('hide'); 
+    if ($(this).hasClass("staff-tab")) {
+        $('a[role="tab"][data-toggle="popover"]').parent().addClass('active');
+    }
 });

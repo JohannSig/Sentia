@@ -8,9 +8,13 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Sentia sálfræðistofa</title>
+        
         <link href="content/css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link href="content/css/project.css" rel="stylesheet" type="text/css"/>
-        <script src="content/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+        
+        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat' type='text/css'>        
+        
+        <script src="content/js/jquery-2.1.1.min.js" type="text/javascript"></script>        
         <script src="content/js/bootstrap.js" type="text/javascript"></script>
         <script src="content/js/frozenforge.js" type="text/javascript"></script>
         <script src="content/js/project.js" type="text/javascript"></script>
@@ -20,34 +24,34 @@ and open the template in the editor.
         <div id="main-container" class="container">
 
             <div class="row bordered" id="header-row">
-                <div class="col-xs-2 blue">Blue part</div>
-                <div class="col-xs-8">
+                <div class="hidden-xs col-sm-2 blue"></div>
+                <div class="col-xs-12 col-sm-8">
                     <h1>Sentia Sálfræðistofa</h1>
-                    <p>Höfðabakka 9 Reykjavík</p>
-                    <p>Tímapöntun 527-7600</p>
+                    <p>Höfðabakka 9 Reykjavík<br/>
+                    Tímapantanir í síma 527-7600</p>
                 </div>
-                <div class="col-xs-2"></div>
+                <div class="hidden-xs col-sm-2"></div>
             </div>
 
 
             <div class="row bordered" style="position: relative;">         
 
-                <div class="col-xs-2 full">
+                <div class="hidden-xs col-sm-2 full">
                     <div class="row bordered"> 
-                        <div class="col-xs-12" style="min-height: 200px;">White part</div>
+                        <div class="col-xs-12" style="min-height: 200px;"></div>
                     </div>
                     <div class="row bordered" style="position: relative; height: calc(100% - 200px);">
-                        <div class="col-xs-12 yellow full">Yellow part</div>
+                        <div class="col-xs-12 yellow full"></div>
                     </div>
                 </div>
 
 
                 <!-- Main Content -->
-                <div class="col-xs-8 col-xs-offset-2" style="min-height: 400px;">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2" style="min-height: 400px;">
 
                     <div class="row bordered">
-                        <div class="col-xs-12 yellow">
-                            <ul class="nav nav-pills" role="tablist" style="margin: 10px 0px;">
+                        <div id="nav-menu" class="col-xs-12 yellow">
+                            <ul class="nav nav-pills nav-justified" role="tablist">
                                 <li role="presentation"><a href="#sentia" aria-controls="sentia" role="tab" data-toggle="tab">Sentia</a></li>
                                 <li role="presentation"><a href="#services" aria-controls="services" role="tab" data-toggle="tab">Þjónusta</a></li>
                                 <li role="presentation" class="active">
@@ -57,7 +61,7 @@ and open the template in the editor.
                                        data-container="ul.nav-pills"
                                        data-placement="auto top"
                                        data-trigger="click"
-                                       data-title="Starfsfólk Sentia"                                       
+                                       <?php /*data-title="Starfsfólk Sentia" */ ?>
                                        data-toggle="popover">Starfsfólk</a>
                                 </li>
                                 <li role="presentation"><a href="#workshops" aria-controls="workshops" role="tab" data-toggle="tab">Námskeið</a></li>
@@ -66,12 +70,13 @@ and open the template in the editor.
                         </div>
                     </div>                    
 
-                    <div class="row bordered">
+                    <div id="main-content" class="row bordered">
                         <div class="col-xs-12">
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade" id="sentia">
                                     <h2>Sentia Sálfræðistofa</h1>
-                                        <p>Sálfræðiþjónusta fyrir börn, unglinga, ungmenni og fullorðna.</p>
+                                        <p>Hjá sálfræðistofunni starfa Soffía Elín Sigurðardóttir, Elín Anna Baldursdóttir og Hanna Dorothéa Bizouerne.</p>
+                                        <p>Sálfræðiþjónustan er ætluð börnum, unglingum og ungmennum.</p>
                                         <p>Greining, meðferð og ráðgjöf á íslensku, ensku og frönsku.</p>
                                         <p><i>Orðið Sentia er úr latínu og upprunnið í rómverskri goðafræði. Sentia var verndari þroska og menntun barna.</i></p>
                                 </div>
@@ -104,113 +109,164 @@ and open the template in the editor.
                                     <h3>Soffía Elín Sigurðardóttir <small>Sálfræðingur</small></h3>
                                     <p class="text-muted">
                                         <span class="glyphicon glyphicon-phone"></span> Sími:
-                                        <a href="tel:+3545555555">+354 xxx-xxxx</a> | 
                                         <span class="glyphicon glyphicon-envelope"></span> Netfang: 
                                         <a href="mailto:soffiaelin@sentia.is">soffiaelin@sentia.is</a>
                                     </p>
 
                                     <div class="row">
-                                        <div class="col-sm-3">
+                                        <div class="col-xs-12 col-sm-3">
                                             <img src="content/images/staff/soffiaelin.jpg" style="width: 100%"/>
                                         </div>
 
-                                        <div class="col-sm-9">
+                                        <div class="col-xs-12 col-sm-9">
 
+                                            <h4>Sérhæfing</h4>
+                                            <p>Soffía Elín hefur sérhæft sig alfarið í sálfræðiþjónustu fyrir börn, unglinga og ungmenni. Verkefni snúa að frávikum í þroska, hegðun eða líðan.</p>
+                                            <p>Soffía Elín vinnur með fjölbreytileg málefni allt frá ákveðniþjálfun.... að stuðningsúrræðum vegna fósturbarna.</p>
 
                                             <h4>Menntun</h4>
-                                            <p>Soffía Elín er með mastersgráðu í skóla- og þroskasálfræði frá Western Sydney University (WSU) Ástralíu árið 2008 en lauk grunnnámi í sálfræði frá Háskóla Íslands árið 2003.</p>
-                                            <p>Í dag leggur Soffía Elín stund á doktorsnám í Lýðheilsuvísindum við Háskóla Íslands og rannsakar fósturbörn á Íslandi. Doktorsrannsóknin er fyrsta sinnar tegundar á Íslandi.</p>
+                                            <p>Doktorsnám í Lýðheilsuvísindum við Háskóla Íslands. Rannsókn: Foster Children in Iceland 2014-2018.</p>
+                                            <p>Mastersgráða skóla- og þroskasálfræði frá Western Sydney University (WSU) Ástralíu árið 2008.</p>
+                                            <p>Bachelorgráða í sálfræði frá Háskóla Íslands árið 2003.</p>
 
                                             <h4>Starfsreynsla</h4>
-                                            <p>Starfsreynsla og sérhæfing hefur alfarið snúið að sálfræðiþjónustu fyrir börn, unglinga og ungmenni. Greining og meðferð frávika í þroska, hegðunar- og tilfinningavanda. Soffía Elín vinnur meðal annars með sjálfstyrkingu, félagsfærni og ákveðniþjálfun.</p>
-                                            <p>Soffía Elín hefur verið sjálfstætt starfandi sálfræðingur frá árinu 2011 og rekur Sentia Sálfræðistofu. Samhliða starfar Soffía Elín sem skólasálfræðingur hjá Garðabæ.</p>
-                                            <p>Soffía Elín hefur starfað sem skólasálfræðingur bæði á Íslandi  og í Sydney, Ástralíu þar sem samfélagsaðstæður voru krefjandi og vandkvæði oft mjög flókin. Meðal handleiðara eru þau Tim Hannan klínínskur taugasálfræðingur og Dr. Patsy Tremayne íþróttasálfræðingur og prófessor.</p>
+                                            <p>Soffía Elín hefur verið sjálfstætt starfandi sálfræðingur frá árinu 2011 og rekur Sentia Sálfræðistofu. Samhliða starfar Soffía Elín sem skólasálfræðingur hjá Garðabæ og leggur stund á doktorsnám við Háskóla Íslands.</p>
+                                            <p>Soffía Elín starfaði sem skólasálfræðingur ár í Ástralíu í tveimur grunnskólum í Sydney þar sem samfélagsaðstæður voru krefjandi og vandkvæði oft mjög flókin. Meðal handleiðara eru þau Tim Hannan klínínskur taugasálfræðingur og Dr. Patsy Tremayne íþróttasálfræðingur og prófessor.</p>
                                             <p>Soffía Elín starfaði í hátt þrjú ár sem sálfræðingur Barnaverndar Reykjavíkur og kom þar að fjölbreyttum verkefnum sem snéru að meðferðar- og greiningarvinnu barna ásamt handleiðslu við kyn- og fósturforeldra.</p>
+                                            <p>Önnur starfsreynsla snýr að geðdeild, atferlismótun með einhverfum börnum svo eitthvað sé nefnt.</p> 
+
+                                            <h4>Rannsóknir</h4>
+                                            <p>Áhugi hefur beinst að taugaþroska barna og unglinga. Rannsóknir í BA og MA námi hafa báðar snúið að notkun orðaminnisprófs sem metur taugaþroska fullorðinna (RAVLT) og barna (CAVLT).</p>
+                                            <p>Mastersrannsókn: ,,The Effects of Self-regulation on Working Memory in Adolescents with consideration of gender difference (2008)." 
+                                            <p>Soffía Elín rannsakar í dag þroska fósturbarna á Íslandi og er doktorsrannsóknin fyrsta sinnar tegundar.
+                                                -----sjá meira...</p>
+
+                                            <h4>Námskeið og fyrirlestrar</h4>
+                                            <p>Soffía Elín hefur sótt ótal námskeiða og ráðstefna sem snúa að þroska, hegðun og líðan barna og unglinga og vinnur út frá ýmsum nálgunum líkt og DBT, CBT o.fl.</p>
+                                            <p>Soffía Elín hefur á síðustu árum sótt þekkingar og reynslu í áfallavinnu út frá Eye Movement Desensitization & Reprocessing (EMDR).</p>
+                                            <p>Önnur þekking snýr að námskeiðum sem snúa að störfum forsjár- og umgengnisdeilum hjá Félagi sérfræðinga í klínískri sálfræði.</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div role="tabpanel" class="tab-pane staff fade" id="staff-2">                                    
 
-                                    <h3>Starfsmaður á plani <small>Sálfræðingur</small></h3>
+                                    <h3>Elín Anna Baldursdóttir <small>Sálfræðingur</small></h3>
                                     <p class="text-muted">
                                         <span class="glyphicon glyphicon-phone"></span> Sími:
-                                        <a href="tel:+3545555555">+354 xxx-xxxx</a> | 
                                         <span class="glyphicon glyphicon-envelope"></span> Netfang: 
-                                        <a href="mailto:soffiaelin@sentia.is">postur@sentia.is</a>
+                                        <a href="mailto:elinanna@sentia.is">elinanna@sentia.is</a>
                                     </p>
 
                                     <div class="row">
-                                        <div class="col-sm-3">
-                                            <img src="content/images/staff/johannsig.jpg" style="width: 100%"/>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <img src="content/images/staff/elinanna.jpg" style="width: 100%"/>
                                         </div>
 
-                                        <div class="col-sm-9">
+                                        <div class="col-xs-12 col-sm-9">
 
+
+                                            <h4>Sérhæfing</h4>
+                                            <p>Elín Anna hefur sérhæft sig í sálfræðiþjónustu fyrir börn, unglinga og ungmenni.</p>
+                                            <p>Greining og meðferð frávika í þroska, hegðunar- og tilfinningarvanda.</p>
+                                            <p>Elín Anna er að sérhæfa sig í vinnu með ungt afreksfólk í íþróttum, frammistöðukvíða og þunglyndi.</p>
 
                                             <h4>Menntun</h4>
-                                            <p>Blablabla</p>
+                                            <p>Mastersgráða í sálfræði (barnalína) við Háskóla Íslands. Rannsókn: </p>
+                                            <p>Bachelorgráða í sálfræði við Háskólann í Reykjavík. Rannsókn: </p>
 
                                             <h4>Starfsreynsla</h4>
-                                            <p>Blablabla</p>
+                                            <p>Elín Anna starfar samhliða stofurekstri sem skólasálfræðingur hjá Reykjanesbæ og æfir handbolta með FH.</p>
+                                            <p>Elín Anna hefur x ára starfsreynslu með fötluðum og sætti starfsnámi hjá Greiningar- og ráðgjafarstöð ríkisins.</p>
+
+                                            <h4>Rannsóknir</h4>
+                                            <p>Bachelorrannsókn: </p>
+                                            <p>Mastersrannsókn: </p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div role="tabpanel" class="tab-pane staff fade" id="staff-3">                                    
 
-                                    <h3>Starfsmaður í þjálfun <small>Sálfræðingur</small></h3>
+                                    <h3>Hanna Dorothéa Biziouerne <small>Sálfræðingur</small></h3>
                                     <p class="text-muted">
                                         <span class="glyphicon glyphicon-phone"></span> Sími:
-                                        <a href="tel:+3545555555">+354 xxx-xxxx</a> | 
                                         <span class="glyphicon glyphicon-envelope"></span> Netfang: 
-                                        <a href="mailto:soffiaelin@sentia.is">postur@sentia.is</a>
+                                        <a href="mailto:hanna@sentia.is">hanna@sentia.is</a>
                                     </p>
-                                    
+
                                     <div class="row">
-                                        <div class="col-sm-3">
-                                            <img src="content/images/staff/johannsig.jpg" style="width: 100%"/>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <img src="content/images/staff/hannadorothea.jpg" style="width: 100%"/>
                                         </div>
 
-                                        <div class="col-sm-9">
+                                        <div class="col-xs-12 col-sm-9">
+                                            <h4>Sérhæfing</h4>
+                                            <p>Hanna hefur sérhæft sig í sálfræðiþjónustu fyrir börn, unglinga og ungmenni.</p>
+                                            <p>Greining og meðferð frávika í þroska, hegðunar- og tilfinningarvanda.</p>
+                                            <p>Hanna kemur sérstaklega að yngri börnum og hvers kyns uppeldisráðgjöf fyrir foreldra. Hanna talar og skilur frönsku reiprennandi og tekur einnig sálfræðiviðtöl við fólk börn jafnt sem fullorðna á franskri tungu.</p>
+
+
                                             <h4>Menntun</h4>
-                                            <p>Blablabla</p>
+                                            <p>Mastersgráða í sálfræði (barnalína) við Háskóla Íslands.</p>
+                                            <p>Bachelorgráða í sálfræði við Háskóla Íslands.</p> 
 
                                             <h4>Starfsreynsla</h4>
-                                            <p>Blablabla</p>
+                                            <p>Samhliða stofurekstri starfar Hanna sem skólasálfræðingur hjá Grindavíkurbæ. Hún er einnig stundakennari við Háskóla Íslands þar sem hún kennir B.S. sálfræðinemum <i>Foreldraþjálfun (PMT)</i> sem er gagnreynt meðferðarform fyrir börn með frávik í líðan og hegðun.</p>
+                                            <p>Hanna hefur starfað á skammtímavistun fyrir börn og unglinga með fatlanir um áraskeið.</p>
+                                            <p>Samhliða stofurekstri vinnur Hanna sem skólasálfræðingur hjá Grindavíkurbæ. Hún er einnig stundakennari við Háskóla Íslands þar sem hún kennir B.S. nemum Foreldraþjálfun (PMT) sem er gagnreynt meðferðarform fyrir börn með geðvanda. Hún hefur einnig starfað á skammtímavistun fyrir börn og unglinga með fatlanir um áraskeið.</p>
+                                            <p>Hanna sætti starfsþjálfun hjá Greiningar- og ráðgjafastöð ríkisins þar sem hún fékk góða reynslu af greiningum á frávikum í þroska, þverfaglegri teymisvinnu og rágjöf til nærumhverfis barna.</p>
+
+
+                                            <h4>Rannsóknir</h4>
+                                            <p>Bachelorrannsókn: ,,Stöndum saman: Beinar áhorfsmælingar á árangri eineltisforvarna í stuðningi við jákvæða hegðun."</p>
+                                            <p>Mastersrannsókn: ,,Tengsl skjánotkunar við svefnlengd í úrtaki íslenskra barna á aldrinum 10 til 18 ára."</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div role="tabpanel" class="tab-pane fade" id="workshops">
-                                    <h1>Námskeið og fyrirlestrar</h1>
+                                    <h1>Námskeið</h1>
 
                                     <h2>Nexus Noobs</h2>
                                     <p>Námskeiðið er ætlað ungu fólki á aldrinum 12 til 20 ára sem langar til þess að læra inn á ný áhugamál eða að læra meira um viðfangsefnin sem þau þegar þekkja.</p>
                                     <p>Þátttakendur kynnast frábærum félögum sem deila áhuganum og læra inn á borðspil, safnkortaspil, hlutverkaspil, módelsmíði, herkænskuleiki, vísindaskáldskap, fantasíur, myndasögur og margt fleira.</p>
 
-                                    <h2>Skráning á haustnámskeið</h2>
-                                    <p>Hægt er að fá frekari upplýsingar um skráningu á námskeiðið á heimasíðu Nexus Noobs eða með tölvupósti.</p>
+                                    <h2>Skráning á námskeið</h2>
+                                    <p>Hægt er að fá frekari upplýsingar um skráningu á námskeiðin á <a href="https://www.facebook.com/Nexusnoobs">heimasíðu Nexus N00bs</a> eða með <a href="mailto:nexusnoobs@gmail.com">NexusNoobs@gmail.com</a>.</p>
                                     <p><a href="https://www.facebook.com/Nexusnoobs">Nexus Noobs á Facebook!</a></p>
                                     <br>
-                                </div>
 
+                                    Fyrirlestrar
+
+                                    <h2>Fyrirlestur um sjálfsmynd og ákveðniþjálfun</h2>
+                                    <p>Fyrir: Grunnskóla/leikskólakennara, foreldra og foreldrafélög og unglinga</p>
+                                    <p>Sentia Sálfræðistofa býður upp á líflega fyrirlestra um hvernig megi efla sjálfsmynd og ákveðniþjálfun hjá börnum og unglingum.</p>
+                                    <p>Hægt er að fá frekari upplýsingar um verð, efni og fyrirlesara með <a href="mailto:soffiaelin@sentia.is">tölvupósti</a>.
+                                        s
+                                    <h2>Fyrirlestur um kvíða</h2>
+                                    <p>Fyrir: Grunnskóla/leikskólakennara, foreldra og foreldrafélög - og unglinga</p>
+                                    <p>Sentia Sálfræðistofa býður upp á greinagóða og líflega fyrirlestra um kvíðaeinkenni hjá börnum og unglingum ásamt úrræðum fyrir viðmælendur.</p>
+                                    <p>Hægt er að fá frekari upplýsingar um verð, efni og fyrirlesara með <a href="mailto:soffiaelin@sentia.is">tölvupósti</a>.
+
+                                    <h2>Fyrirlestur um Athyglisbrest og ofvirkni (ADHD)</h2>
+                                    <p>Fyrir: Grunnskóla/leikskólakennara, foreldra og foreldrafélög - og unglinga</p>
+                                    <p>Sentia Sálfræðistofa býður upp á greinagóða og líflega fyrirlestra um kvíðaeinkenni hjá börnum og unglingum ásamt úrræðum fyrir viðmælendur.</p>
+                                    <p>Hægt er að fá frekari upplýsingar um verð, efni og fyrirlesara með <a href="mailto:soffiaelin@sentia.is">tölvupósti</a>.
+                                </div>
 
                                 <div role="tabpanel" class="tab-pane fade" id="edu-material">
                                     <p><a href="https://www.nexusnoobs.is//">Nexus Noobs</a></p>
-                                    <p><a href="https://www.khanacademy.org//">Khan Academy</a></p>
+                                    <p><a href="https://www.turette.is/">Túrette samtökin</a></p>
                                     <p><a href="https://www.khanacademy.org//">Khan Academy</a></p>
                                     <p><a href="https://www.khanacademy.org//">Khan Academy</a></p>
                                 </div>
                             </div>                            
                         </div>
-
                     </div>
                 </div>
 
-                <div class="col-xs-2 col-xs-offset-10 red full" style="color: white">
-                    Red part
-                </div>                        
+                <div class="hidden-xs col-sm-2 col-sm-offset-10 red full" style="color: white"></div>                        
 
             </div>
         </div>

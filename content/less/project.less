@@ -17,26 +17,30 @@ and open the template in the editor.
 body {
     background-color: lightgray; 
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
-background: rgb(181,189,200); /* Old browsers */
-background: -moz-linear-gradient(left,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* IE10+ */
-background: linear-gradient(to right,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+    background: rgb(181,189,200); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 */
 
-    
-    
+    font-family: 'Montserrat';
+
     margin-top: 20px;
+    margin-bottom: 40px;
     overflow-y: scroll;
+}
+
+p {
+    font-size: 12px;
 }
 
 #main-container {
 
-    box-shadow: 0px 0px 16px black;
-    
+
     background-color: white;    
     div.row.bordered {
         border: 0px solid #333;
@@ -105,17 +109,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
 
 .staff {
     padding-top: 20px;
-    
+
     h3 {
         margin-top: 0px;
         margin-bottom: 0px;
     }
-    
+
     div > h4 {
         &:not(:first-child) { margin-top: 30px; }
         margin-bottom: 0px;
     }
-    
+
     img {
         width: 100%;
         border: 6px solid #333;
@@ -123,5 +127,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
 }
 
 #header-row > div { min-height: 150px; }
+
+
+#main-content {
+    padding-bottom: 40px;
+}
+
+#nav-menu {
+
+    padding: 0px;
+
+    > ul { 
+        > li { 
+
+            &:not(.active) > a:hover {
+            
+            }
+
+            &:not(:first-of-type) > a {
+                border-left: 6px solid transparent;
+            }
+
+            &:not(:last-of-type) > a {
+                border-right: 6px solid transparent;            
+            }
+
+            > a {
+                padding: 16px 0px;  
+                border-radius: 0px;              
+                color: black;                
+                transition: background-color 0.2s;
+            }
+
+            &.active > a {
+                border-left-color: #333;
+                border-right-color: #333;                
+                background-color: white;            
+                color: black;
+            }
+
+        }
+
+
+    }
+}
+
 
 @import "project-xs.less";
