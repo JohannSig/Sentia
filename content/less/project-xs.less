@@ -11,4 +11,13 @@ and open the template in the editor.
 /* XS only */
 @media (max-width: 767px) {
 
+    #nav-menu > ul > li {
+        &:not(:first-of-type) > a {
+            border-left: 0px solid transparent;
+        }
+
+        &:not(:last-of-type) > a {
+            border-right: 0px solid transparent;            
+        }
+    }
 }

@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"E:\\dev\\projects\\Sentia\\content\\css\\project-xs.css"}
+{"version":3,"sources":["../less/project-xs.less"],"names":[],"mappings":";;;;;;;;;;AAuBA,QAZ0B;EAGlB,SADM,KAAK,KACV,IAAI,gBAAiB;IAClB,kCAAA;;EAGJ,SALM,KAAK,KAKV,IAAI,eAAgB;IACjB,mCAAA","file":"E:\\dev\\projects\\Sentia\\content\\css\\project-xs.css"}

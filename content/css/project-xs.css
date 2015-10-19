@@ -8,4 +8,12 @@ and open the template in the editor.
     Author     : johannsig
 */
 /* XS only */
+@media (max-width: 767px) {
+  #nav-menu > ul > li:not(:first-of-type) > a {
+    border-left: 0px solid transparent;
+  }
+  #nav-menu > ul > li:not(:last-of-type) > a {
+    border-right: 0px solid transparent;
+  }
+}
 /*# sourceMappingURL=project-xs.css.map */
