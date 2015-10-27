@@ -6,9 +6,11 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <meta charset="UTF-8">
         <title>Sentia sálfræðistofa</title>
 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />                
+        
         <link href="content/css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link href="content/css/project.css" rel="stylesheet" type="text/css"/>
 
@@ -30,12 +32,8 @@ and open the template in the editor.
                     <div class="row" style="margin-top: 10px;">
 
                         <div class="col-xs-12">
-                            <h1>
-                                <img src="content/images/hnottur_logo_hvitt.png" style="width: 40px; margin-top: -5px; vertical-align: middle;" />
-                                Sentia Sálfræðistofa
-                            </h1>
-                            <p>Höfðabakka 9 Reykjavík<br/>
-                                Tímapantanir í síma 527-7600</p>
+                            <img src="content/images/hnottur_logo_hvitt.png" style="width: 80px; vertical-align: top; margin-top: 24px;" />
+                            <div style="display: inline-block; margin-top: 10px;" class="h2" >Sentia Sálfræðistofa<br/><span style="font-size: 14px;">Höfðabakka 9 Reykjavík<br/>Tímapantanir í síma 527-7600</span></div>
                         </div>
                     </div>
                 </div>
@@ -47,7 +45,8 @@ and open the template in the editor.
 
                 <div class="hidden-xs col-sm-2 full" >
                     <div class="row bordered"> 
-                        <div class="col-xs-12 bordered" style="min-height: 200px;"><!-- White space --></div>
+                        <div class="col-xs-12 bordered" style="min-height: 200px;">
+                        </div>
                     </div>
                     <div class="row full-container bordered" style="height: calc(100% - 206px);">
                         <div class="col-xs-12 yellow full bordered" ><!--Yellow space --></div>
